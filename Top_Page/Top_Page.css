@@ -3,3 +3,92 @@
    topページのheaderを書くのであれば→Top_header_title みたいな感じかな?
    class名は長くなってもいい（20文字以上は微妙）id名はわかりやすく端的に
    衝突したら変更するだけだから気軽にやっていこう*/
+   * {
+      box-sizing: border-box;
+   }
+   body {
+      margin: 0 ;
+      padding: 0 ;
+      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #e6e6e6;
+      padding-top: 80px;
+   }/*↑初期設定用のボディ*/
+   
+   /*ヘッダ-----------------------------------------------*/
+  header{
+    top: 0;/*画面topからの距離*/
+    width: 100%;/*サイドの幅*/
+    height: 90px;/*ヘッダの上下幅*/
+    background-color: rgb(255, 228, 188);/*色*/
+    padding: 10px 4% 10px;/*ヘッダの内側の余白 上　左　下　右*/
+    position: fixed;/*ヘッダ固定*/
+    display: flex;/*header直下の子要素のレイアウトをコントロール*/
+    align-items :center; /*要素の縦方向の位置　center＝中心*/
+    }
+    /*タイトルの調整*/
+    
+  #form1{
+      position:relative; /*相対位置指定*/
+      margin-bottom:0;	/*余白指定無し*/
+      }
+      #sbox1{	
+      outline:0;	
+      padding:0 10px; 
+      position:relative; 
+      left:0;
+      top:0; 
+      width:15vw;
+      border-radius:2px;
+      background:#eee;
+      }
+      #sbtn1{
+      width:50px;
+      position:relative; 
+      left:2px; 
+      top:0;
+      border-radius:2px;
+      background:#7fbfff;
+      color:#fff;
+      font-weight:bold;
+      font-size:auto;
+      border:none;
+      }
+      #sbtn1:hover{
+      background:#eee;
+      color:#7fbfff;
+      }
+      /*検索バーの設定*/
+    h1{
+        /*width: 10%;*/
+        height: auto;
+        margin: 0; 
+        padding: 10px 0 0;
+        font-size: 40px;
+    }
+    h1 a:hover{ color: red;  transition: 1s;}/*マウスによる変化*/
+  
+    .Title img{
+        width: 30vm;
+    }
+    /*アンダーラインの消去*/
+    a{
+        text-decoration: none;
+        color: #4d4d4d;
+    }
+    /*ul・liリストタグの見た目*/
+    ul{
+        list-style: none;
+        margin: 0 ;
+        display: flex;
+    }
+    li{
+        margin: 0 0 0 18px;
+        font-size: auto;
+        font-weight: bold;/*文字の太さ*/
+    }
+    ul a:hover{  text-decoration:underline; transition: 1s;}
+    /*ナビ要素の外側の余白右寄せ*/
+    .nav-1{
+        margin: 0 0 0 auto;
+    }
+    
