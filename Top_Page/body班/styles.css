@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e6e6e6;
+    padding-top: 80px;
+}
+/*ヘッダ-----------------------------------------------*/
+header {
+    z-index:20;/*優先表示*/
+    top: 0; /*画面topからの距離*/
+    width: 100%; /*サイドの幅*/
+    background-color: white; /*色*/
+    padding: 10px 4% 10px; /*ヘッダの内側の余白 上　左　下　右*/
+    position: fixed; /*ヘッダ固定*/
+    display: flex; /*header直下の子要素のレイアウトをコントロール*/
+    align-items: center; /*要素の縦方向の位置　center＝中心*/
+}
+/*タイトルの調整*/
+.ARMIC-logo {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+    .ARMIC-logo a:hover {
+        color: red;
+        transition: 1s;
+    }
+/*マウスによる変化*/
+/*アンダーラインの消去*/
+.header_a_item {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+/*ul・liリストタグの見た目*/
+.header_list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+.header_list a:hover {
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.header_list_item {
+    margin: 0 0 0 18px;
+    font-size: 15px;
+    font-weight: bold; /*文字の太さ*/
+}
+
+
+/*ナビ要素の外側の余白右寄せ*/
+.nav-1 {
+    margin: 0 0 0 auto;
+}
+/*ボディ*/
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 90%;
+    /* 見た目調整 */
+    height: 200px;
+    margin: 16px;
+    font-size: 48px;
+    background: rgba(255, 0, 0, 0.4);
+}
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-bottom:100px;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    margin-right: 1%;
+    padding: 3px 12px;
+    order: -1;
+    width: 24%;
+}
+.tab-content {
+    width: 99%;
+    display: none;
+    background: white;
+    padding-right: 3%;
+}
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+    background: DeepSkyBlue;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+     display: block;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
