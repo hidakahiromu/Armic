@@ -58,35 +58,35 @@
       color:#7fbfff;
       }
       /*検索バーの設定*/
-    h1{
+    .Title h1{
         /*width: 10%;*/
         height: auto;
         margin: 0; 
         padding: 10px 0 0;
         font-size: 40px;
     }
-    h1 a:hover{ color: red;  transition: 1s;}/*マウスによる変化*/
+    .Title h1 a:hover{ color: red;  transition: 1s;}/*マウスによる変化*/
   
     .Title img{
         width: 30vm;
     }
     /*アンダーラインの消去*/
-    a{
+    .nav-1 a{
         text-decoration: none;
         color: #4d4d4d;
     }
     /*ul・liリストタグの見た目*/
-    ul{
+    .nav-1 ul{
         list-style: none;
         margin: 0 ;
         display: flex;
     }
-    li{
+    .nav-1 li{
         margin: 0 0 0 18px;
         font-size: auto;
         font-weight: bold;/*文字の太さ*/
     }
-    ul a:hover{  text-decoration:underline; transition: 1s;}
+    .nav-1 ul a:hover{  text-decoration:underline; transition: 1s;}
     /*ナビ要素の外側の余白右寄せ*/
     .nav-1{
         margin: 0 0 0 auto;
