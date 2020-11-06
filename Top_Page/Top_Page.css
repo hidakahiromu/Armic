@@ -1,21 +1,16 @@
-@charset "UTF-8";
-/* class名とid名は出来るだけかぶらないようにする努力をしよう!
-   topページのheaderを書くのであれば→Top_header_title みたいな感じかな?
-   class名は長くなってもいい（20文字以上は微妙）id名はわかりやすく端的に
-   衝突したら変更するだけだから気軽にやっていこう*/
-   * {
-      box-sizing: border-box;
-   }
-   body {
-      margin: 0 ;
-      padding: 0 ;
-      font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: #e6e6e6;
-      padding-top: 80px;
-   }/*↑初期設定用のボディ*/
-   
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e6e6e6;
+    padding-top: 80px;
+}
    /*ヘッダ-----------------------------------------------*/
-  header{
+   header{
     top: 0;/*画面topからの距離*/
     width: 100%;/*サイドの幅*/
     height: 90px;/*ヘッダの上下幅*/
@@ -91,4 +86,181 @@
     .nav-1{
         margin: 0 0 0 auto;
     }
-    
+
+/*ボディ*/
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 90%;
+    /* 見た目調整 */
+    height: 200px;
+    margin: 16px;
+    font-size: 48px;
+    background: rgba(255, 0, 0, 0.4);
+}
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-bottom:100px;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    margin-right: 1%;
+    padding: 3px 12px;
+    order: -1;
+    width: 24%;
+}
+.tab-content {
+    width: 99%;
+    display: none;
+    background: white;
+    padding-right: 3%;
+}
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+    background: DeepSkyBlue;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+     display: block;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
+
+/*フッター-----------------------------------------------*/
+footer{
+    background-color: #c0c0c0;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*ロゴ*/
+.footer-logo{
+    font-size: 3em;
+    padding: 20px 20px;
+}
+
+.footer-logo a{
+    color: black;
+}
+
+/*リスト*/
+.footer-list{
+    float: left;
+}
+
+.footer-list li{
+    list-style: none;
+}
+
+.footer-list a{
+    color: #696969;
+}
+
+.footer-list a:hover{
+    text-decoration: underline;
+}
+
+/*リスト２*/
+.footer-list2{
+    margin-left: 20em;
+    margin-bottom: 5em;
+}
+
+.footer-list2 li{
+    list-style: none;
+}
+
+.footer-list2 a{
+    color: #696969;
+}
+
+.footer-list2 a:hover{
+    text-decoration: underline;
+}
+
+/*検索窓*/
+.wrap{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    max-width: 800px;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.Box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Box-SearchInput {
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    height: 55px;
+    letter-spacing: 0.1em;
+    padding-left: 20px;
+    padding-right: 55px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+}
+@media screen and (max-width: 540px) {
+    .Box-SearchInput {
+      height: 45px;
+      padding-right: 45px;
+      font-size: 12px;
+    }
+}
+.Box-Btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background: #fff;
+    vertical-align: middle;
+}
+@media screen and (max-width: 540px) {
+    .Box-Btn {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+    }
+}
+.Box-Btn-Icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 19px;
+    height: 19px;
+}
+
+/*twitterアイコン*/
+.twitter-icon{
+    width: 30px;
+    height: 30px;
+}

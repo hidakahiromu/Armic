@@ -1,38 +1,173 @@
-<!DOCTYPE html>
-<html lang=”ja”></html>
-<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″>
-<link rel="stylesheet" href="Top_Page.css">
-<html>
-<head><!-- ここにhead班はコードを記入 -->
-    <meta  charset="UTF-8">
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
     <title>Armic 音楽サイト</title>
-    <header>
-      <h1 class="Title">
-        <a href="#"　title="Homeへ"><img src="Armic-transparent.png" width="200" height="112.5"></a>
-        <!--画像は今無い-->
-      </h1>  
-       <nav class="nav-1"> 
-        <ul>
-         
-           <li><a href="#" title="準備中">ホーム</a></li>
-           <li><a href="#" title="準備中">イベント</a></li>
-           <li><a href="#" title="準備中">ニュース</a></li>
-           <li><form id="form1" action="cgi-bin/example.cgi" method="post">
-           <input id="sbox1"  type="text" placeholder="ジャンルを入力" />
-           <input id="sbtn1" type="submit" value="検索" /></form></li>
-           <li><a href="#" title="準備中">ログイン</a></li>
-         </ul>
-       </nav>
-      </header>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link href="Top_Page.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="{{ asset('css/style.css') }}">-->
+    <!--禁忌-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.slider').bxSlider({
+        auto: true,
+        pause: 5000,
+        });
+        });
+    </script>
+
+    <!--禁忌-->
+
+    <meta name="description" content="Armic 音楽サイト">
 </head>
 
+<header>
+  <h1 class="Title">
+    <a href="#"　title="Homeへ"><img src="image/Armic-transparent.png" width="200" height="112.5"></a>
+    <!--画像は今無い-->
+  </h1>  
+   <nav class="nav-1"> 
+    <ul>
+         
+       <li><a href="#" title="準備中">ホーム</a></li>
+        <li><a href="#" title="準備中">イベント</a></li>
+        <li><a href="#" title="準備中">ニュース</a></li>
+       <li><form id="form1" action="cgi-bin/example.cgi" method="post">
+       <input id="sbox1"  type="text" placeholder="ジャンルを入力" />
+       <input id="sbtn1" type="submit" value="検索" /></form></li>
+       <li><a href="#" title="準備中">ログイン</a></li>
+     </ul>
+   </nav>
+</header>
+
 <body>
-    <!-- ここにbody班はコードを記入 -->
+    <div class="slider">
+        <a href="{{ url('/HELLO') }}"><img src="image/Armic-transparent.png" width="500" height="300" alt=""></a>
+        <a href="#"><img src="HELLO.php" width="500" height="300" alt=""></a>
+        <a href="#"><img src="HELLO.php" width="500" height="300" alt=""></a>
+
+    </div>
+    <!--
+    <ul class="horizontal-list">
+        <li class="item">
+            <div>TOPIC1</div>
+        </li>
+        <li class="item">
+            <div>TOPIC2</div>
+        </li>
+        <li class="item">
+            <div>TOPIC3</div>
+        </li>
+        <li class="item">
+            <div>TOPIC14</div>
+        </li>
+    </ul>
+    -->
+
+    <div class="tab-wrap">
+        <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">サイト案内</label>
+        <div class="tab-content">
+            コンテンツ 1
+
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">イベントランキング</label>
+        <div class="tab-content">
+            コンテンツ 2
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03">イベント</label>
+        <div class="tab-content">
+            コンテンツ 3
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <input id="TAB-04" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-04">掲示板</label>
+        <div class="tab-content">
+            コンテンツ 4
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+        </div>
+
+
+
+
+    </div>
 </body>
 
 <footer>
-    <!-- ここにfooter班はコードを記入 -->
-    <!-- bodyの中に書くかもしれなけどいったん分離して書こう -->
+    <div class="footer-etc">
+        <div class="footer-logo"><a href="#">Armic</a></div>
+        <ul>
+         <div class="footer-list">
+                <li><a href="">Q&A</a></li>
+                <li><a href="">運営への問い合わせ</a></li>
+                <li><a href="">利用規約</a></li>
+                <li><a href="">アカウント作成</a></li>
+                <li><a href="">info</a></li>
+                <li class="twitter-icon"><a href=""><img src="image/twitter.png" alt=""></a></li>
+            </div>
+        </ul>
+        <div class="footer-list2">
+            <ul>
+                <li><a href="">Member</a></li>
+                <li><a href="">Topic</a></li>
+                <li><a href="">Ranking</a></li>
+                <li><a href="">Event</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="Box">
+          <input type="search" class="Box-SearchInput" name="" value="" placeholder="探す">
+          <button type="submit" class="Box-Btn" name=""><img src="image/search-icon.png" class="Box-Btn-Icon" alt=""></button>
+        </div>
+    </div>
 </footer>
-
 </html>
