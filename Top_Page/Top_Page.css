@@ -19,6 +19,7 @@ body {
     position: fixed;/*ヘッダ固定*/
     display: flex;/*header直下の子要素のレイアウトをコントロール*/
     align-items :center; /*要素の縦方向の位置　center＝中心*/
+    z-index: 9999;
     }
     /*タイトルの調整*/
     
@@ -161,6 +162,7 @@ a{
 /*リスト*/
 .footer-list{
     float: left;
+    margin-left: 15em;
 }
 
 .footer-list li{
@@ -177,7 +179,7 @@ a{
 
 /*リスト２*/
 .footer-list2{
-    margin-left: 20em;
+    margin-left: 30em;
     margin-bottom: 5em;
 }
 
