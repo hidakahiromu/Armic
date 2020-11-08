@@ -1,6 +1,8 @@
 /*スライドショー*/
 .slideshow {
 	padding-top: 50px;
+	
+	width: 500px;
 	position: relative;
 	overflow: hidden;
 }
