@@ -8,6 +8,8 @@ body {
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #e6e6e6;
     padding-top: 80px;
+   
+    
 }
    /*ヘッダ-----------------------------------------------*/
    header{
@@ -90,6 +92,7 @@ body {
 
 /*ボディ*/
 .horizontal-list {
+    
     overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
@@ -106,6 +109,8 @@ body {
     background: rgba(255, 0, 0, 0.4);
 }
 .tab-wrap {
+    
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 2%;
