@@ -18,9 +18,10 @@
     align-items :center; /*要素の縦方向の位置　center＝中心*/
     z-index: 9999;
    
-   }
+	 }
+	 /*フッダー*/
    /*ulのマネージ*/
-   ul {
+	 ul {
 	display: block;
 	list-style-type: disc;
 	margin-block-start: 1em;
