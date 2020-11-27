@@ -334,7 +334,7 @@ input[name="slideshow"] {
   height: 140px;
 	position: relative; 
 }
-  a::after {
+  .rank a::after {
     content: "近日公開";
     color: #8dd4ff;
     font-size: 30px;
