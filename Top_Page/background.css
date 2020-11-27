@@ -453,4 +453,8 @@ input[name="slideshow"] {
 				.login-list a:hover{
 					text-decoration: underline;
 				}
+				.footer-other small{
+					position: absolute;
+					bottom: 0; left: 50%;
+				}
 				
