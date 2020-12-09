@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ARMIC</title>
+  <link rel="stylesheet" href="Top_Page.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="icon" type="image/x-icon" href="armicicon.png">
+  <meta name="description" content="Armic 音楽サイト">
+  <meta http-equiv="X-UA=Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">  
+  <link rel="stylesheet" href="Rogu.css">
+</head>
+
+<body>
+  <header>
+    <nav class="o">
+      <ul class="header_list1">
+        <li><a>
+            <nobr>ARMICについて</nobr>
+          </a></li>
+        <li><a>
+            <nobr>投稿ページ</nobr>
+          </a></li>
+        <li><a>
+            <nobr>アーティスト一覧</nobr>
+          </a></li>
+      </ul>
+    </nav>
+    <h1 class="header_logo"><a href="Home.html" 　title="Homeへ">
+        <img src="armic.png" width="200" height="arto"></a>
+    </h1>
+    <ul class="header_list2">
+      <form method="get" action="#" class="search_container">
+        <input type="text" size="25" placeholder="キーワード検索">
+        <input type="submit" value="&#xf002">
+      </form>
+      <p></p>
+      <li><a>
+          <nobr>イベント</nobr>
+        </a></li>
+      <li><a>
+          <nobr>ニュース</nobr>
+        </a></li>
+      <li><a>
+          <nobr>ログイン</nobr>
+        </a></li>
+    </ul>
+  </header>
+  
+
+
+  <!--ログインフォーム始-->
+<div class="form-wrapper">
+  <h1>パスワードを変更しょう</h1>
+  <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
+  <form action="" method="post"　>
+      <!--フォーム要素１（メール）-->
+      <!--required="required"-->
+    <div class="form-item">
+      <label for="email"></label>
+      <input type="email" name="email" required="required" placeholder="登録したメールアドレス"></input>
+    </div>
+       <!--フォーム要素２（ユーザーID）-->
+    <div class="form-item">
+      <label for="UserId"></label>
+      <input type="text" name="UserId" required="required" placeholder="登録した携帯の番号"></input>
+    </div>
+      <!--フォーム要素３（パスワード）-->
+    <div class="form-item">
+      <label for="email_1"></label>
+      <input type="email_1" name="email_1" required="required" placeholder="送信用メールアドレス"></input>
+    </div>
+    <!--ボタン-->
+    <div class="button-panel">
+      <input type="submit" class="button" title="Sign In" value="送信"></input>
+    </div>
+  </form>
+  <!--リンク（新規、パス忘れ）-->
+  <div class="form-footer">
+    <p><a href="#">新規登録</a></p>
+    <p><a href="Rogu.html">ログイン</a></p>
+  </div>
+</div>
+<!--ログインフォーム終-->
+  <footer id="footer" class="outer-block">
+    <div class="inner-block">
+      <div class="wrap">
+        <div class="logo">
+          <a href="#"><h1>ARMIC</h1></a>
+        </div>
+        <div class="cont">
+          <div class="c-btn">
+            <a href="#">質問</a>
+          </div>
+          <ul class="nav">
+            <li>ユーザー</li>
+            <li><a href="">ログイン</a></li>
+            <li><a href="">マイページ</a></li>
+          </ul>
+          <ul class="nav">
+            <li>ご利用に際して</li>
+            <li><a href="">Q&A</a></li>
+            <li><a href="">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p><small> © 2020 Armic</small></p>
+    </div>
+  </footer>
+</body>
+
+</html>
