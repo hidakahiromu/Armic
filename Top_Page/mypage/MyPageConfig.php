@@ -73,7 +73,7 @@
         <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
         <form action="" method="post" 　>
           <p>アーティスト名<p>
-              <div class>
+              <div>
                 <div class="MyPageConfig_form-event">
 
                   <label for="name"></label>

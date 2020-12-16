@@ -140,7 +140,7 @@ margin: 10em;
 }
 
 .Mypage_Delete_button:hover {
-    background: #009292;
+    background: rgb(250, 0, 250);
 }
 
 .Mypage_MusicBox_Delete p {
