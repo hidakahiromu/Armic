@@ -109,12 +109,16 @@
             height: 100%;
         }
    
+        .Mypage_Posted_MusicBox_Table tr * {
+            border: solid 2px #c0c0c0;
+           
+            
+           
+            
+        }    
     
     
     
-    .Mypage_Posted_MusicBox_Table tr * {
-        border: solid 2px #c0c0c0;
-    }    
     
     
     .Mypage_Posted_MusicBox_Tabletitle1{

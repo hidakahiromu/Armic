@@ -78,15 +78,8 @@
                             <th class="Mypage_Posted_MusicBox_Tabletitle1">
                                 動画
                             </th>
-
-
-
-
-
-
-
                             <th>
-                                <nobr><iframe width="320" height="180" src="https://www.youtube.com/embed/6kUhRhoBNEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></nobr>
+                                <iframe width="320" height="180" src="https://www.youtube.com/embed/6kUhRhoBNEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </th>
 
                         </tr>
