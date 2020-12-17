@@ -1,5 +1,7 @@
 
-
+body{
+  background-image:url("../test.svg");
+}
 
 .menu {/*リストの真ん中表示*/
   max-width: 400px;
