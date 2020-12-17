@@ -59,7 +59,8 @@
         }
 
         .event_all .photo {
-        height: 200px;
+        height: 150px;
+        width: auto;
         overflow: hidden;
         }
 
@@ -152,7 +153,6 @@
          }
 
          .near_event a::after {
-            content: "近日公開";
             color: #8dd4ff;
             font-size: 30px;
             position: absolute;
