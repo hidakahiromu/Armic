@@ -203,7 +203,7 @@
 
 /* :::::: arrow mechanism :::::: */
     .arrow label {
-	   pointer-events: none;
+	   pointer-ds: none;
     }
     #switch1:checked ~ .prev label[for="switch5"],
     #switch2:checked ~ .prev label[for="switch1"],

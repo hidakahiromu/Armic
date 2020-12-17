@@ -16,6 +16,11 @@
     .nodesize{
         font-size: 12px;
     }
+    .nodesize a{
+        height: auto;
+        width: 10px;
+        overflow: hidden;
+    }
 
     li.sbs .new_create{
         margin-left: 80%;
@@ -64,13 +69,6 @@
         overflow: hidden;
         }
 
-        .event_all:hover {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-        border: none;
-        border-bottom: 5px solid #00BCD4;
-        }
-
         .event_all .details {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -78,6 +76,12 @@
         padding: 1em 1em 0 1em;
         font-size: 0.8em;
         }
+        .event_all .details .event_title{
+        margin-left: 15px;
+        font-size: 2em;
+        text-align: center;
+        }
+    
 
         .event_all .date {
         -webkit-box-flex: 1;
@@ -87,9 +91,9 @@
         }
 
         .event_all .category {
-        -webkit-box-flex: 2;
+        /* -webkit-box-flex: 2;
         -ms-flex: 2;
-        flex: 2;
+        flex: 2; */
         }
 
         .event_all .category p {
